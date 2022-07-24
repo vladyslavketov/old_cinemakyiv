@@ -1,0 +1,6 @@
+@mixin flex($flexGap, $flexJc: center, $flexAi: center) {
+  display: flex;
+  justify-content: $flexJc;
+  align-items: $flexAi;
+  gap: $flexGap;
+}
