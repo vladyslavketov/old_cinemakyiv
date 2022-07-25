@@ -1,5 +1,11 @@
-%flexCenter {
+%flexC {
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+
+%flexSB {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
 }

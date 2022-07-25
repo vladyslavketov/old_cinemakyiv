@@ -1,8 +1,8 @@
 .header {
   // position: relative;
-  background-color: #3fd1e8;
+  background-color: #212121;
   border-bottom: 1px solid #212121;
-  color: #fff;
+  color: #ff9100;
 }
 
 .header__container {
@@ -10,7 +10,7 @@
   align-items: center;
   min-height: 80px;
 
-  color: #fff;
+  color: #ff9100;
 
   @media screen and (max-width: 767px) {
     justify-content: space-between;    
@@ -18,7 +18,7 @@
 }
 
 .menu-btn {
-  color: #fff;
+  color: #ff9100;
 
   border: 1px solid transparent;
   border-radius: 2px;
@@ -51,18 +51,18 @@
 }
 
 .nav__list {
-  @extend %flexCenter;
+  @extend %flexC;
   gap: 15px;
 }
 
 .nav__link {
   padding: 30px 0;
 
-  color: #fff;
+  color: #ff9100;
 }
 
 .header__socials {
-  @extend %flexCenter;
+  @extend %flexC;
   margin-left: auto;
   gap: 15px;
 }
@@ -70,5 +70,5 @@
 .header__socials-link {
   padding: 30px 0;
 
-  color: #fff;
+  color: #ff9100;
 }

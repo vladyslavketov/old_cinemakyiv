@@ -4,10 +4,11 @@
 @import "./utils/mixins";
 @import "./utils/placeholders";
 
-@import "./components/_logo";
+@import "./components/logo";
+@import "./components/socials";
 
 @import "./layout/header";
 @import "./layout/hero";
 @import "./layout/benefits";
 @import "./layout/team";
-@import "./layout/team";
+@import "./layout/footer";

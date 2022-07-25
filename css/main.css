@@ -9,6 +9,7 @@ ul,
 button {
   margin: 0;
   padding: 0;
+  border: 0;
 }
 
 .link {
@@ -71,14 +72,12 @@ img {
   }
 }
 
-.container__wrap {
-  background-color: #3fd1e8;
-  border-radius: 4px;
-  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+.title {
+  text-align: center;
+  margin-bottom: 20px;
 }
 
-.hero__list, .header__socials, .nav__list {
+.team__desc, .team-card__title, .benefits__list, .header__socials, .nav__list, .socials__link, .socials {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -92,7 +91,7 @@ img {
 
 .header__logo {
   margin-right: 15px;
-  color: #fff;
+  color: #ff9100;
 }
 
 .logo__icon {
@@ -102,10 +101,27 @@ img {
   fill: currentColor;
 }
 
+.socials {
+  gap: 20px;
+  width: 206px;
+  height: 44px;
+  margin: 0 auto;
+}
+
+.socials__link {
+  width: 44px;
+  height: 44px;
+}
+
+.socials__icon {
+  width: 30px;
+  height: auto;
+}
+
 .header {
-  background-color: #3fd1e8;
+  background-color: #212121;
   border-bottom: 1px solid #212121;
-  color: #fff;
+  color: #ff9100;
 }
 
 .header__container {
@@ -116,7 +132,7 @@ img {
       -ms-flex-align: center;
           align-items: center;
   min-height: 80px;
-  color: #fff;
+  color: #ff9100;
 }
 @media screen and (max-width: 767px) {
   .header__container {
@@ -127,7 +143,7 @@ img {
 }
 
 .menu-btn {
-  color: #fff;
+  color: #ff9100;
   border: 1px solid transparent;
   border-radius: 2px;
   -webkit-box-shadow: none;
@@ -173,7 +189,7 @@ img {
 
 .nav__link {
   padding: 30px 0;
-  color: #fff;
+  color: #ff9100;
 }
 
 .header__socials {
@@ -183,18 +199,96 @@ img {
 
 .header__socials-link {
   padding: 30px 0;
-  color: #fff;
+  color: #ff9100;
 }
 
-.hero__container .hero__title {
-  padding: 10px 10px;
-  font-size: 24px;
-  color: #fff;
-  text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-  text-align: center;
+.benefits__list {
+  gap: 15px;
 }
 
-.hero__list {
-  margin-top: 20px;
-  gap: 20px;
+.team__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 30px;
+}
+
+.team__item {
+  -ms-flex-preferred-size: calc((100% - 30px * (1 - 1)) / 1);
+      flex-basis: calc((100% - 30px * (1 - 1)) / 1);
+  background: #fff;
+  -webkit-box-shadow: 0px 1px 3px #212121, 0px 1px 1px #212121, 0px 2px 1px #212121;
+          box-shadow: 0px 1px 3px #212121, 0px 1px 1px #212121, 0px 2px 1px #212121;
+  border-radius: 0px 0px 4px 4px;
+}
+@media screen and (min-width: 768px) {
+  .team__item {
+    -ms-flex-preferred-size: calc((100% - 30px * (2 - 1)) / 2);
+        flex-basis: calc((100% - 30px * (2 - 1)) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__item {
+    -ms-flex-preferred-size: calc((100% - 30px * (4 - 1)) / 4);
+        flex-basis: calc((100% - 30px * (4 - 1)) / 4);
+  }
+}
+
+.team-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+}
+
+.team__img {
+  width: 100%;
+}
+
+.team-card__title {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  padding: 30px 10px;
+}
+
+.team__desc {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  width: 100%;
+  margin: 10px 0;
+}
+
+.team__level {
+  position: relative;
+  margin-right: 5px;
+}
+.team__level::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -5px;
+  display: block;
+  width: 1px;
+  height: 100%;
+  border-radius: 2px;
+  background-color: #212121;
 }/*# sourceMappingURL=main.css.map */

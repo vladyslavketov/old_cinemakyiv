@@ -1,0 +1,67 @@
+.team__list {
+  @include cardSet();
+}
+
+.team__item {
+  @include cardSet__item();
+
+  background: #fff;
+  box-shadow: 0px 1px 3px #212121,
+    0px 1px 1px #212121,
+    0px 2px 1px #212121;
+  border-radius: 0px 0px 4px 4px;
+
+  @media screen and (min-width:768px) {
+    @include cardSet__item($items: 2);
+  }
+
+  @media screen and (min-width:1200px) {
+    @include cardSet__item($items: 4);
+  }
+}
+
+.team-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.team__img {
+  width: 100%;
+}
+
+.team-card__title {
+  @extend %flexC;
+  flex-direction: column;
+  flex-grow: 1;
+  padding: 30px 10px;
+}
+
+.team__desc {
+  @extend %flexC;
+  justify-content: flex-start;
+  flex-direction: column;
+  flex-grow: 1;
+  width: 100%;
+  margin: 10px 0;
+}
+
+.team__level {
+  position: relative;
+
+  margin-right: 5px;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -5px;
+  
+    display: block;
+    width: 1px;
+    height: 100%;
+  
+    border-radius: 2px;
+    background-color: #212121;
+  }
+}
