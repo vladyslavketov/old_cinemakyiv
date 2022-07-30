@@ -20,12 +20,17 @@ button {
   list-style: none;
 }
 
+a,
+button {
+  color: inherit;
+}
+
 body {
-  font-family: sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: #000;
+  color: #1d2a3b;
   background-color: #fff;
 }
 
@@ -38,6 +43,15 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Source Serif Pro", serif;
 }
 
 .section {
@@ -91,7 +105,6 @@ img {
 
 .header__logo {
   margin-right: 15px;
-  color: #ff9100;
 }
 
 .logo__icon {
@@ -119,9 +132,8 @@ img {
 }
 
 .header {
-  background-color: #212121;
-  border-bottom: 1px solid #212121;
-  color: #ff9100;
+  border-bottom: 1px solid #1d2a3b;
+  background-color: #84c0fc;
 }
 
 .header__container {
@@ -132,7 +144,6 @@ img {
       -ms-flex-align: center;
           align-items: center;
   min-height: 80px;
-  color: #ff9100;
 }
 @media screen and (max-width: 767px) {
   .header__container {
@@ -143,7 +154,6 @@ img {
 }
 
 .menu-btn {
-  color: #ff9100;
   border: 1px solid transparent;
   border-radius: 2px;
   -webkit-box-shadow: none;
@@ -189,7 +199,6 @@ img {
 
 .nav__link {
   padding: 30px 0;
-  color: #ff9100;
 }
 
 .header__socials {
@@ -199,11 +208,36 @@ img {
 
 .header__socials-link {
   padding: 30px 0;
-  color: #ff9100;
+}
+
+.benefits__container {
+  background-color: #84c0fc;
+  border-radius: 12px;
 }
 
 .benefits__list {
   gap: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 30px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.benefits__item {
+  text-align: center;
+  -ms-flex-preferred-size: calc((100% - 30px * (1 - 1)) / 1);
+      flex-basis: calc((100% - 30px * (1 - 1)) / 1);
+}
+@media screen and (min-width: 1200px) {
+  .benefits__item {
+    -ms-flex-preferred-size: calc((100% - 30px * (3 - 1)) / 3);
+        flex-basis: calc((100% - 30px * (3 - 1)) / 3);
+  }
 }
 
 .team__list {

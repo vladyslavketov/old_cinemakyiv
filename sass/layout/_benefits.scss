@@ -1,4 +1,20 @@
+.benefits__container {
+  background-color: #84c0fc;
+  border-radius: 12px;
+}
+
 .benefits__list {
   @extend %flexC;
   gap: 15px;
+  @include cardSet;
+  align-items: flex-start;
+}
+
+.benefits__item {
+  text-align: center;
+  @include cardSet__item;
+
+  @media screen and (min-width:1200px) {
+    @include cardSet__item ($items: 3);
+  }
 }

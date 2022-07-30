@@ -1,8 +1,8 @@
 .header {
   // position: relative;
-  background-color: #212121;
-  border-bottom: 1px solid #212121;
-  color: #ff9100;
+  border-bottom: 1px solid $color__main;
+
+  background-color: #84c0fc;
 }
 
 .header__container {
@@ -10,16 +10,12 @@
   align-items: center;
   min-height: 80px;
 
-  color: #ff9100;
-
   @media screen and (max-width: 767px) {
     justify-content: space-between;    
   }
 }
 
 .menu-btn {
-  color: #ff9100;
-
   border: 1px solid transparent;
   border-radius: 2px;
   box-shadow: none;
@@ -57,8 +53,6 @@
 
 .nav__link {
   padding: 30px 0;
-
-  color: #ff9100;
 }
 
 .header__socials {
@@ -69,6 +63,4 @@
 
 .header__socials-link {
   padding: 30px 0;
-
-  color: #ff9100;
 }
