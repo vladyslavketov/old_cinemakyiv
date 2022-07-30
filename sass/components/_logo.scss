@@ -1,11 +1,9 @@
 .header__logo {
-  margin-right: 15px;
-}
+  @extend %flexC;
+  min-width: 200px ;
+  margin-right: auto;
 
-.logo__icon {
-  display: block;
-  width: 60px;
-  height: auto;
-
-  fill: currentColor;
+  font-family: $font-f__h;
+  font-size: 32px;
+  font-weight: 600;
 }

@@ -4,7 +4,8 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: $color__main;
-  background-color: $color-bg__w;
+  background-color: $color-bg__main;
+  padding-top: $height_hrader;
 }
 
 body.modal-open,
@@ -41,6 +42,9 @@ h6 {
   width: 100%;
   padding: 0 15px;
   margin: 0 auto;
+
+  border-radius: 8px;
+  background-color: #fff;
 
   @media screen and (min-width: 480px) {
     width: 480px;
