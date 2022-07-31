@@ -1,3 +1,4 @@
+@charset "UTF-8";
 h1,
 h2,
 h3,
@@ -16,7 +17,7 @@ button {
   text-decoration: none;
 }
 
-.list {
+.list, .slick-dots {
   list-style: none;
 }
 
@@ -32,7 +33,7 @@ body {
   letter-spacing: 0.03em;
   color: #1d2a3b;
   background-color: #f0faff;
-  padding-top: 60px;
+  padding-top: 61px;
 }
 
 body.modal-open,
@@ -94,7 +95,7 @@ h6 {
   margin-bottom: 20px;
 }
 
-.team__desc, .team-card__title, .benefits__list, .nav__list, .socials__link, .socials, .header__logo {
+.slick-dots, .slider__item, .team__desc, .team-card__title, .benefits__list, .nav__list, .socials__link, .socials, .header__logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -146,6 +147,7 @@ h6 {
   min-height: 60px;
   width: 100%;
   padding: 0 15px;
+  outline: 1px solid orange;
 }
 @media screen and (min-width: 480px) {
   .header__container {
@@ -391,8 +393,83 @@ h6 {
   background-color: #212121;
 }
 
+.wrapper {
+  padding: 20px 100px;
+  outline: 1px solid blue;
+  background-color: #fff;
+}
+
 .slider {
-  width: 100%;
-  height: 400px;
-  background-color: aqua;
-}/*# sourceMappingURL=main.css.map */
+  position: relative;
+  padding: 0 40px;
+  outline: 1px solid olive;
+}
+
+/* Лента слайдов */
+.slick-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* Слайдер */
+/* Слайдер запущен */
+/* Слайдер с точками */
+.slick-list {
+  overflow: hidden;
+}
+
+/* Стрелка */
+.slick-arrow {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 10;
+  font-size: 20px;
+  background-color: transparent;
+}
+
+/* иконка в виде стрелки */
+.slick-prev-icon,
+.slick-next-icon {
+  fill: currentColor;
+}
+
+/* Стрелка влево */
+.slick-arrow.slick-prev {
+  left: 0;
+}
+
+/* Стрелка вправо */
+.slick-arrow.slick-next {
+  right: 0;
+}
+
+/* Слайд */
+/* Слайд активный (показывается) */
+/* Слайд основной */
+/* Слайд по центру */
+/* Клонированный слайд */
+/* Стрелка не активная */
+/* Точки (булиты) */
+.slick-dots {
+  gap: 10px;
+  padding: 8px;
+}
+
+.slick-dots li {
+  width: 10px;
+  height: 10px;
+  font-size: 0;
+  background-color: #212121;
+  border-radius: 50%;
+}
+
+/* Активная точка */
+.slick-dots li.slick-active {
+  background-color: transparent;
+  border: 1px solid #212121;
+}
+
+/* Элемент точки *//*# sourceMappingURL=main.css.map */
