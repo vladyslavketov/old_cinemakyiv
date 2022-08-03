@@ -1,67 +1,55 @@
-.team__list {
-  @include cardSet();
+.team {
+  background-color: $color-bg__main;
 }
 
 .team__item {
-  @include cardSet__item();
-
-  background: #fff;
-  box-shadow: 0px 1px 3px #212121,
-    0px 1px 1px #212121,
-    0px 2px 1px #212121;
-  border-radius: 0px 0px 4px 4px;
-
-  @media screen and (min-width:768px) {
-    @include cardSet__item($items: 2);
-  }
-
-  @media screen and (min-width:1200px) {
-    @include cardSet__item($items: 4);
-  }
+  background: $color-bg__w;
+  box-shadow: 0 0 4px rgb(0 0 0 / 30%);
+  border-radius: 4px;
+  width: 100%;
+  
 }
 
-.team-card {
+.team__card {
   display: flex;
   flex-direction: column;
+  align-items: center;
   height: 100%;
-}
-
-.team__img {
-  width: 100%;
-}
-
-.team-card__title {
-  @extend %flexC;
-  flex-direction: column;
-  flex-grow: 1;
-  padding: 30px 10px;
+  
 }
 
 .team__desc {
-  @extend %flexC;
-  justify-content: flex-start;
+  display: flex;
   flex-direction: column;
-  flex-grow: 1;
-  width: 100%;
-  margin: 10px 0;
+  align-items: center;
+  gap: 12px;
+
+  padding: 12px;
 }
 
-.team__level {
+.team__position-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.team .socials{
+  margin-top: auto;
+}
+
+.team__slider {
   position: relative;
+}
 
-  margin-right: 5px;
+.team__slider .slick-list {
+  padding: 4px;
+}
 
-  &::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: -5px;
-  
-    display: block;
-    width: 1px;
-    height: 100%;
-  
-    border-radius: 2px;
-    background-color: #212121;
-  }
+.team__slider .slick-track {
+  gap: 16px;
+}
+
+.team__slider .slick-dots {
+  padding: 24px;
 }

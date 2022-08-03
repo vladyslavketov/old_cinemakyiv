@@ -16,7 +16,7 @@
   </head>
   <body>
     <header class="header">
-      <div class="header__container" >
+      <div class="header__container container">
         <a class="logo header__logo link" href="./index.html">
           ck
           <!-- <svg class="logo__icon" width="24" height="24">
@@ -28,8 +28,9 @@
           <nav class="nav">
             <ul class="nav__list list">
               <li class="nav__item"><a class="nav__link link" href="./index.html">Головна</a></li>
-              <li class="nav__item"><a class="nav__link link" href="./slider.html">Слайдер</a></li>
-              <li class="nav__item"><a class="nav__link link" href="#">Актори</a></li>
+              <li class="nav__item"><a class="nav__link link" href="#">Наші проекти</a></li>
+              <li class="nav__item"><a class="nav__link link" href="#">Для замовників</a></li>
+              <li class="nav__item"><a class="nav__link link" href="#">Для акторів</a></li>
             </ul>
           </nav>
           <!-- соціальні мережі -->
@@ -47,7 +48,28 @@
       </div>
     </header>
     <main>
-      <!-- <h1 class="main title">WELCOME</h1> -->
+      <!-- секція герой -->
+      <section class="hero section">
+        <div class="hero__container container">
+          <h1 class="hero__title title">Хто ми такі?</h1>
+          <p class="hero__desc">Cinema Kyiv Agancy - Професіональне кастинг-агенство з досвідом роботи у сфері більше 15 років. Провідні виробники медіа контенту наймають акторів за допомогою Cinema Kyiv Agancy.</p>
+        </div>
+      </section>
+      <section class="clients-slide">
+        <div class="clients-slide__container container">
+          <p class="clients-slide__desc">Нам довіряють провідні компанії</p>
+          <div class="clients-slide__inner">
+            <ul class="clients-slide__list list clients__slider">
+              <li class="clients-slide__item slider__item">Radioactive</li>
+              <li class="clients-slide__item slider__item">Film.ua</li>
+              <li class="clients-slide__item slider__item">Kinorob</li>
+              <li class="clients-slide__item slider__item">ForeFilm</li>
+              <li class="clients-slide__item slider__item">Pronto Film</li>
+              <li class="clients-slide__item slider__item">Toypictures</li>
+            </ul>
+          </div>
+        </div>
+      </section>
       <!-- секція переваги -->
       <section class="benefits section">
         <div class="benefits__container container">
@@ -70,23 +92,17 @@
       </section>
       <!-- секція команда -->
       <section class="team section">
-        <div class="team container">
+        <div class="team__container container">
           <h2 class="team title">Наша команда</h2>
-          <ul class="team__list list">
-            <li class="team__item">
-              <div class="team-card">
+          <ul class="team__list list team__slider">
+            <li class="team__item slider__item">
+              <div class="team__card">
                 <img class="team__img" src="./images/team/jack.png" alt="" width="270">
-                <div class="team-card__title">
+                <div class="team__desc">
                   <h3 class="team__name">Ігор Васильович</h3>
-                  <div class="team__desc">
-                    <p class="team__position-wrap">
-                      <!-- <span class="team__level" lang="en">Senior</span> -->
-                      <span class="team__position">Кастинг-директор</span>
-                    </p>
-                    <p class="team__position-wrap">
-                      <!-- <span class="team__level" lang="en">Засновник</span> -->
-                      <span class="team__position">Засновник "Cinema Kyiv agancy"</span>
-                    </p>
+                  <div class="team__position-wrap">
+                    <p class="team__position">Кастинг-директор</p>
+                    <p class="team__position">Засновник "Cinema Kyiv agancy"</p>
                   </div>
                   <ul class="socials list">
                     <li class="socials__item">
@@ -107,16 +123,13 @@
                 </div>
               </div>
             </li>
-            <li class="team__item">
-              <div class="team-card">
+            <li class="team__item slider__item">
+              <div class="team__card">
                 <img class="team__img" src="./images/team/jack.png" alt="" width="270">
-                <div class="team-card__title">
+                <div class="team__desc">
                   <h3 class="team__name">Вероніка</h3>
-                  <div class="team__desc">
-                    <p class="team__position-wrap">
-                      <!-- <span class="team__level" lang="en">Senior</span> -->
-                      <span class="team__position">Кастинг-менеджер</span>
-                    </p>
+                  <div class="team__position-wrap">
+                    <p class="team__position">Кастинг-менеджер</p>
                   </div>
                   <ul class="socials list">
                     <li class="socials__item">
@@ -137,16 +150,14 @@
                 </div>
               </div>
             </li>
-            <li class="team__item">
-              <div class="team-card">
+            <li class="team__item slider__item">
+              <div class="team__card">
                 <img class="team__img" src="./images/team/jack.png" alt="" width="270">
-                <div class="team-card__title">
+                <div class="team__desc">
                   <h3 class="team__name">Владислав</h3>
-                  <div class="team__desc">
-                    <p class="team__position-wrap">
-                      <!-- <span class="team__level" lang="en">Senior</span> -->
-                      <span class="team__position">Веб розробник</span>
-                    </p>
+                  <div class="team__position-wrap">
+                    <p class="team__position">Веб розробник</p>
+                    <p class="team__position">Офіс менеджер</p>
                   </div>
                   <ul class="socials list">
                     <li class="socials__item">
@@ -167,16 +178,13 @@
                 </div>
               </div>
             </li>
-            <li class="team__item">
-              <div class="team-card">
+            <li class="team__item slider__item">
+              <div class="team__card">
                 <img class="team__img" src="./images/team/jack.png" alt="" width="270">
-                <div class="team-card__title">
+                <div class="team__desc">
                   <h3 class="team__name">Каріна</h3>
-                  <div class="team__desc">
-                    <p class="team__position-wrap">
-                      <!-- <span class="team__level" lang="en">Senior</span> -->
-                      <span class="team__position">Офіс-менеджер</span>
-                    </p>
+                  <div class="team__position-wrap">
+                    <p class="team__position">Офіс менеджер</p>
                   </div>
                   <ul class="socials list">
                     <li class="socials__item">
@@ -197,16 +205,13 @@
                 </div>
               </div>
             </li>
-            <li class="team__item">
-              <div class="team-card">
+            <li class="team__item slider__item">
+              <div class="team__card">
                 <img class="team__img" src="./images/team/jack.png" alt="" width="270">
-                <div class="team-card__title">
+                <div class="team__desc">
                   <h3 class="team__name">Павло</h3>
-                  <div class="team__desc">
-                    <p class="team__position-wrap">
-                      <span class="team__level" lang="en">Senior</span>
-                      <span class="team__position">Кастинг-менеджер</span>
-                    </p>
+                  <div class="team__position-wrap">
+                    <p class="team__position">Кастинг-менеджер</p>
                   </div>
                   <ul class="socials list">
                     <li class="socials__item">
@@ -227,16 +232,13 @@
                 </div>
               </div>
             </li>
-            <li class="team__item">
-              <div class="team-card">
+            <li class="team__item slider__item">
+              <div class="team__card">
                 <img class="team__img" src="./images/team/jack.png" alt="" width="270">
-                <div class="team-card__title">
+                <div class="team__desc">
                   <h3 class="team__name">Аліна</h3>
-                  <div class="team__desc">
-                    <p class="team__position-wrap">
-                      <span class="team__level" lang="en">Senior</span>
-                      <span class="team__position">Кастинг-менеджер</span>
-                    </p>
+                  <div class="team__position-wrap">
+                    <p class="team__position">Кастинг-менеджер</p>
                   </div>
                   <ul class="socials list">
                     <li class="socials__item">
@@ -257,16 +259,13 @@
                 </div>
               </div>
             </li>
-            <li class="team__item">
-              <div class="team-card">
+            <li class="team__item slider__item">
+              <div class="team__card">
                 <img class="team__img" src="./images/team/jack.png" alt="" width="270">
-                <div class="team-card__title">
+                <div class="team__desc">
                   <h3 class="team__name">Елена</h3>
-                  <div class="team__desc">
-                    <p class="team__position-wrap">
-                      <span class="team__level" lang="en">Middle</span>
-                      <span class="team__position">Кастинг-менеджер</span>
-                    </p>
+                  <div class="team__position-wrap">
+                    <p class="team__position">Кастинг-менеджер</p>
                   </div>
                   <ul class="socials list">
                     <li class="socials__item">
@@ -287,16 +286,13 @@
                 </div>
               </div>
             </li>
-            <li class="team__item">
-              <div class="team-card">
+            <li class="team__item slider__item">
+              <div class="team__card">
                 <img class="team__img" src="./images/team/jack.png" alt="" width="270">
-                <div class="team-card__title">
+                <div class="team__desc">
                   <h3 class="team__name">Олексій</h3>
-                  <div class="team__desc">
-                    <p class="team__position-wrap">
-                      <span class="team__level" lang="en">Middle</span>
-                      <span class="team__position">Кастинг-менеджер</span>
-                    </p>
+                  <div class="team__position-wrap">
+                    <p class="team__position">Кастинг-менеджер</p>
                   </div>
                   <ul class="socials list">
                     <li class="socials__item">
@@ -316,136 +312,12 @@
                   </ul>
                 </div>
               </div>
-            </li>
-            <li class="team__item">
-              <div class="team-card">
-                <img class="team__img" src="./images/team/jack.png" alt="" width="270">
-                <div class="team-card__title">
-                  <h3 class="team__name">Олександр</h3>
-                  <div class="team__desc">
-                    <p class="team__position-wrap">
-                      <span class="team__level" lang="en">Senior</span>
-                      <span class="team__position">Кастинг-менеджер</span>
-                    </p>
-                  </div>
-                  <ul class="socials list">
-                    <li class="socials__item">
-                      <a href="#" class="socials__link link">
-                        <svg class="socials__icon" aria-label="instagram" width="20px" height="20px">
-                          <use href="./images/icons.svg#instagram"></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li class="socials__item">
-                      <a href="#" class="socials__link link">
-                        <svg class="socials__icon" aria-label="facebook" width="20px" height="20px">
-                          <use href="./images/icons.svg#facebook"></use>
-                        </svg>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </li>
-            <li class="team__item">
-              <div class="team-card">
-                <img class="team__img" src="./images/team/jack.png" alt="" width="270">
-                <div class="team-card__title">
-                  <h3 class="team__name">Артем</h3>
-                  <div class="team__desc">
-                    <p class="team__position-wrap">
-                      <span class="team__level" lang="en">Middle</span>
-                      <span class="team__position">Кастинг-менеджер</span>
-                    </p>
-                  </div>
-                  <ul class="socials list">
-                    <li class="socials__item">
-                      <a href="#" class="socials__link link">
-                        <svg class="socials__icon" aria-label="instagram" width="20px" height="20px">
-                          <use href="./images/icons.svg#instagram"></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li class="socials__item">
-                      <a href="#" class="socials__link link">
-                        <svg class="socials__icon" aria-label="facebook" width="20px" height="20px">
-                          <use href="./images/icons.svg#facebook"></use>
-                        </svg>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </li>
-            <li class="team__item">
-              <div class="team-card">
-                <img class="team__img" src="./images/team/jack.png" alt="" width="270">
-                <div class="team-card__title">
-                  <h3 class="team__name">Іван</h3>
-                  <div class="team__desc">
-                    <p class="team__position-wrap">
-                      <span class="team__level" lang="en">Junior</span>
-                      <span class="team__position">Кастинг-менеджер</span>
-                    </p>
-                  </div>
-                  <ul class="socials list">
-                    <li class="socials__item">
-                      <a href="#" class="socials__link link">
-                        <svg class="socials__icon" aria-label="instagram" width="20px" height="20px">
-                          <use href="./images/icons.svg#instagram"></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li class="socials__item">
-                      <a href="#" class="socials__link link">
-                        <svg class="socials__icon" aria-label="facebook" width="20px" height="20px">
-                          <use href="./images/icons.svg#facebook"></use>
-                        </svg>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </li>
-            <li class="team__item">
-              <div class="team-card">
-                <img class="team__img" src="./images/team/jack.png" alt="" width="270">
-                <div class="team-card__title">
-                  <h3 class="team__name">Наталія</h3>
-                  <div class="team__desc">
-                    <p class="team__position-wrap">
-                      <span class="team__level" lang="en">Junior</span>
-                      <span class="team__position">Кастинг-менеджер</span>
-                    </p>
-                  </div>
-                  <ul class="socials list">
-                    <li class="socials__item">
-                      <a href="#" class="socials__link link">
-                        <svg class="socials__icon" aria-label="instagram" width="20px" height="20px">
-                          <use href="./images/icons.svg#instagram"></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li class="socials__item">
-                      <a href="#" class="socials__link link">
-                        <svg class="socials__icon" aria-label="facebook" width="20px" height="20px">
-                          <use href="./images/icons.svg#facebook"></use>
-                        </svg>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </li>
+            </li>     
           </ul>
         </div>
       </section>
 
-      <section class="section">
-        <div class="container">
-          <h2 class="title"></h2>
-        </div>
-      </section>
+      
       <!-- <section class="section">
         <div class="container">
           <h2 class="title"></h2>
@@ -453,6 +325,13 @@
       </section> -->
     </main>
     <footer></footer>
+    <!-- підключаємо мобільне меню -->
     <script src="./js/mobile-menu.js"></script>
+    <!-- підключаємо jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- підключаємо слайдер слік -->
+    <script src="./js/slick.min.js"></script>
+    <!-- підключаємо мій слайдер -->
+    <script src="./js/myslick.js"></script>
   </body>
 </html>

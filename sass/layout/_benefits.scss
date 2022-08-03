@@ -1,19 +1,22 @@
 .benefits__list {
-  @extend %flexC;
   gap: 15px;
   @include cardSet;
-  align-items: flex-start;
 }
 
 .benefits__item {
-  text-align: center;
   @include cardSet__item;
+  padding: 20px;
+
+  text-align: center;
+
+  background-color: $color-bg__main;
+  border-radius: 8px;
 
   @media screen and (min-width:1200px) {
     @include cardSet__item ($items: 3);
   }
 }
 
-.benefits {
-  padding-top: 0;
+.benefits__name {
+  margin-bottom: 16px;
 }

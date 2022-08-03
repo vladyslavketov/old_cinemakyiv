@@ -1,10 +1,14 @@
+// * {
+//   outline: 1px solid teal;
+// }
+
 body {
   font-family: $font-f__main;
   font-size: 14px;
-  line-height: 1.71;
+  line-height: (16px/14px);
   letter-spacing: 0.03em;
   color: $color__main;
-  background-color: $color-bg__main;
+  background-color: $color-bg__w;
   padding-top: $height_header+1;
 }
 
@@ -32,19 +36,19 @@ h6 {
   padding-top: 60px;
   padding-bottom: 60px;
 
-  @media screen and (min-width: 1200px) {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
+  // @media screen and (min-width: 1200px) {
+  //   padding-top: 94px;
+  //   padding-bottom: 94px;
+  // }
 }
 
 .container {
   width: 100%;
-  padding: 0 15px;
+  padding: 0 16px;
   margin: 0 auto;
 
-  border-radius: 8px;
-  background-color: #fff;
+  border-radius: 4px;
+  // background-color: #fff;
 
   @media screen and (min-width: 480px) {
     width: 480px;

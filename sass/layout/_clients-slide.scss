@@ -1,0 +1,38 @@
+.clients-slide {
+  padding: 24px 0;
+
+  font-family: $font-f__h;
+  font-weight: 700;
+  color: $color__secondary;
+  background-color: $color-bg__main;
+}
+
+.clients-slide__container {
+  @extend %flexC;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 100%;
+}
+
+.clients-slide__desc {
+  @extend %flexC;
+  min-width: 60px;
+
+  font-size: 16px;
+  text-align: center;
+}
+
+.clients-slide__inner {
+  // flex: 1;
+  width: 100%;
+  min-width: 0;
+}
+
+// .clients-slide__list {
+//   @extend %flexC;
+//   gap: 8px;
+// }
+
+.clients-slide__item {
+  text-align: center;
+}

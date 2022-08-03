@@ -1,20 +1,10 @@
 .socials {
   @extend %flexC;
-  gap: 20px;
-  width: 206px;
-  height: 44px;
-  margin: 0 auto;
-  // margin-left: auto;
-  // margin-right: auto;
+  gap: 16px;
 }
 
 .socials__link {
   @extend %flexC;
   width: 44px;
   height: 44px;
-}
-
-.socials__icon {
-  width: 30px;
-  height: auto;
 }

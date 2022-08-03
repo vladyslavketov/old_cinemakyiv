@@ -12,15 +12,15 @@ button {
   border: 0;
 }
 
+a,
+button {
+  color: inherit;
+}
+
 .link {
   text-decoration: none;
 }
 
 .list {
   list-style: none;
-}
-
-a,
-button {
-  color: inherit;
 }

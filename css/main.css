@@ -13,6 +13,11 @@ button {
   border: 0;
 }
 
+a,
+button {
+  color: inherit;
+}
+
 .link {
   text-decoration: none;
 }
@@ -21,18 +26,13 @@ button {
   list-style: none;
 }
 
-a,
-button {
-  color: inherit;
-}
-
 body {
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
-  line-height: 1.71;
+  line-height: 1.1428571429;
   letter-spacing: 0.03em;
   color: #1d2a3b;
-  background-color: #f0faff;
+  background-color: #fff;
   padding-top: 61px;
 }
 
@@ -60,19 +60,12 @@ h6 {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-@media screen and (min-width: 1200px) {
-  .section {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
-}
 
 .container {
   width: 100%;
-  padding: 0 15px;
+  padding: 0 16px;
   margin: 0 auto;
-  border-radius: 8px;
-  background-color: #fff;
+  border-radius: 4px;
 }
 @media screen and (min-width: 480px) {
   .container {
@@ -95,7 +88,7 @@ h6 {
   margin-bottom: 20px;
 }
 
-.slick-dots, .slider__item, .team__desc, .team-card__title, .benefits__list, .nav__list, .socials__link, .socials, .header__logo {
+.clients-slide__desc, .clients-slide__container, .nav__list, .header__container, .slick-dots, .socials__link, .socials, .header__logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -115,10 +108,7 @@ h6 {
 }
 
 .socials {
-  gap: 20px;
-  width: 206px;
-  height: 44px;
-  margin: 0 auto;
+  gap: 16px;
 }
 
 .socials__link {
@@ -126,45 +116,92 @@ h6 {
   height: 44px;
 }
 
-.socials__icon {
-  width: 30px;
-  height: auto;
-}
-
-.header__container {
-  position: fixed;
-  top: 0;
-  left: 50%;
-  -webkit-transform: translatex(-50%);
-          transform: translatex(-50%);
-  background-color: #f0faff;
+/* Лента слайдов */
+.slick-track {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  min-height: 60px;
-  width: 100%;
-  padding: 0 15px;
-  outline: 1px solid orange;
 }
-@media screen and (min-width: 480px) {
-  .header__container {
-    width: 480px;
-  }
+
+/* Ограничивающая оболочка */
+.slick-list {
+  overflow: hidden;
+}
+
+/* Стрелка */
+.slick-arrow {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 10;
+  width: 32px;
+  height: 100%;
+  font-size: 0;
+  background-color: transparent;
 }
 @media screen and (max-width: 767px) {
-  .header__container {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+  .slick-arrow {
+    display: none;
   }
 }
-@media screen and (min-width: 768px) {
-  .header__container {
-    width: 768px;
-  }
+
+/* иконка в виде стрелки */
+.slick-prev-icon,
+.slick-next-icon {
+  fill: currentColor;
+}
+
+/* Стрелка влево */
+.slick-arrow.slick-prev {
+  left: 0;
+}
+
+/* Стрелка вправо */
+.slick-arrow.slick-next {
+  right: 0;
+}
+
+/* Точки (булиты) */
+.slick-dots {
+  gap: 10px;
+}
+
+.slick-dots li {
+  width: 12px;
+  height: 12px;
+  font-size: 0;
+  background-color: #212121;
+  border-radius: 50%;
+}
+
+/* Активная точка */
+.slick-dots li.slick-active {
+  background-color: transparent;
+  border: 1px solid #212121;
+}
+
+/* Слайдер */
+/* Слайдер запущен */
+/* Слайдер с точками */
+/* Слайд */
+/* Слайд активный (показывается) */
+/* Слайд основной */
+/* Слайд по центру */
+/* Клонированный слайд */
+/* Стрелка не активная */
+/* Элемент точки */
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  min-height: 60px;
+  background-color: #fff;
+  z-index: 10;
+}
+
+.header__container {
+  min-height: 60px;
 }
 @media screen and (min-width: 1200px) {
   .header__container {
@@ -208,25 +245,25 @@ h6 {
   margin: 0;
   background-color: currentColor;
   border-radius: 2px;
-  -webkit-transition-duration: 0.2s;
-          transition-duration: 0.2s;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
   -webkit-transition-property: height, opacity, -webkit-transform;
   transition-property: height, opacity, -webkit-transform;
   transition-property: height, opacity, transform;
   transition-property: height, opacity, transform, -webkit-transform;
 }
 .menu-btn.is-open .burger-line:first-child {
-  margin-top: 16px;
+  margin-top: 14px;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
 }
 .menu-btn.is-open .burger-line:nth-child(2n) {
-  margin-top: -9px;
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+  opacity: 0;
 }
 .menu-btn.is-open .burger-line:last-child {
-  opacity: 0;
+  margin-top: -16px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 
 @media screen and (max-width: 767px) {
@@ -235,10 +272,10 @@ h6 {
     opacity: 0;
     -webkit-transform: translateY(-150%);
             transform: translateY(-150%);
-    -webkit-transition: -webkit-transform 1000ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition: -webkit-transform 1000ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition: transform 1000ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition: transform 1000ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+    -webkit-transition: -webkit-transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: -webkit-transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 .menu-container.is-open {
@@ -253,8 +290,8 @@ h6 {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
-  height: 100%;
-  min-height: 500px;
+  height: 100vh;
+  min-height: 360px;
   padding: 48px 40px;
   background-color: #f0faff;
   overflow-y: scroll;
@@ -274,7 +311,68 @@ h6 {
 }
 
 .nav__link {
-  padding: 30px 0;
+  padding: 20px 0;
+}
+
+.hero.section {
+  min-height: 320px;
+  background-color: #495c77;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(33, 33, 33, 0.7)), to(rgba(33, 33, 33, 0.7))), url(../../images/hero/hlop__1600.jpg);
+  background-image: linear-gradient(rgba(33, 33, 33, 0.7), rgba(33, 33, 33, 0.7)), url(../../images/hero/hlop__1600.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hero__container {
+  padding: 0 60px;
+}
+
+.hero__title,
+.hero__desc {
+  color: #fff;
+}
+
+.hero__title {
+  display: block;
+  font-size: 40px;
+}
+
+.hero__desc {
+  display: block;
+  text-align: center;
+  font-size: 16px;
+}
+
+.clients-slide {
+  padding: 24px 0;
+  font-family: "Source Serif Pro", serif;
+  font-weight: 700;
+  color: #495c77;
+  background-color: #f0faff;
+}
+
+.clients-slide__container {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 30px;
+  max-width: 100%;
+}
+
+.clients-slide__desc {
+  min-width: 60px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.clients-slide__inner {
+  width: 100%;
+  min-width: 0;
+}
+
+.clients-slide__item {
+  text-align: center;
 }
 
 .benefits__list {
@@ -284,59 +382,41 @@ h6 {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  gap: 30px;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  gap: 24px;
 }
 
 .benefits__item {
+  -ms-flex-preferred-size: calc((100% - 24px * (1 - 1)) / 1);
+      flex-basis: calc((100% - 24px * (1 - 1)) / 1);
+  padding: 20px;
   text-align: center;
-  -ms-flex-preferred-size: calc((100% - 30px * (1 - 1)) / 1);
-      flex-basis: calc((100% - 30px * (1 - 1)) / 1);
+  background-color: #f0faff;
+  border-radius: 8px;
 }
 @media screen and (min-width: 1200px) {
   .benefits__item {
-    -ms-flex-preferred-size: calc((100% - 30px * (3 - 1)) / 3);
-        flex-basis: calc((100% - 30px * (3 - 1)) / 3);
+    -ms-flex-preferred-size: calc((100% - 24px * (3 - 1)) / 3);
+        flex-basis: calc((100% - 24px * (3 - 1)) / 3);
   }
 }
 
-.benefits {
-  padding-top: 0;
+.benefits__name {
+  margin-bottom: 16px;
 }
 
-.team__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  gap: 30px;
+.team {
+  background-color: #f0faff;
 }
 
 .team__item {
-  -ms-flex-preferred-size: calc((100% - 30px * (1 - 1)) / 1);
-      flex-basis: calc((100% - 30px * (1 - 1)) / 1);
   background: #fff;
-  -webkit-box-shadow: 0px 1px 3px #212121, 0px 1px 1px #212121, 0px 2px 1px #212121;
-          box-shadow: 0px 1px 3px #212121, 0px 1px 1px #212121, 0px 2px 1px #212121;
-  border-radius: 0px 0px 4px 4px;
-}
-@media screen and (min-width: 768px) {
-  .team__item {
-    -ms-flex-preferred-size: calc((100% - 30px * (2 - 1)) / 2);
-        flex-basis: calc((100% - 30px * (2 - 1)) / 2);
-  }
-}
-@media screen and (min-width: 1200px) {
-  .team__item {
-    -ms-flex-preferred-size: calc((100% - 30px * (4 - 1)) / 4);
-        flex-basis: calc((100% - 30px * (4 - 1)) / 4);
-  }
+  -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+  width: 100%;
 }
 
-.team-card {
+.team__card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -344,132 +424,57 @@ h6 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 100%;
-}
-
-.team__img {
-  width: 100%;
-}
-
-.team-card__title {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  padding: 30px 10px;
 }
 
 .team__desc {
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  width: 100%;
-  margin: 10px 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 12px;
+  padding: 12px;
 }
 
-.team__level {
-  position: relative;
-  margin-right: 5px;
-}
-.team__level::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: -5px;
-  display: block;
-  width: 1px;
-  height: 100%;
-  border-radius: 2px;
-  background-color: #212121;
-}
-
-.wrapper {
-  padding: 20px 100px;
-  outline: 1px solid blue;
-  background-color: #fff;
-}
-
-.slider {
-  position: relative;
-  padding: 0 40px;
-  outline: 1px solid olive;
-}
-
-/* Лента слайдов */
-.slick-track {
+.team__position-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 12px;
 }
 
-/* Слайдер */
-/* Слайдер запущен */
-/* Слайдер с точками */
-.slick-list {
-  overflow: hidden;
+.team .socials {
+  margin-top: auto;
 }
 
-/* Стрелка */
-.slick-arrow {
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  z-index: 10;
-  font-size: 20px;
-  background-color: transparent;
+.team__slider {
+  position: relative;
 }
 
-/* иконка в виде стрелки */
-.slick-prev-icon,
-.slick-next-icon {
-  fill: currentColor;
+.team__slider .slick-list {
+  padding: 4px;
 }
 
-/* Стрелка влево */
-.slick-arrow.slick-prev {
-  left: 0;
+.team__slider .slick-track {
+  gap: 16px;
 }
 
-/* Стрелка вправо */
-.slick-arrow.slick-next {
-  right: 0;
-}
-
-/* Слайд */
-/* Слайд активный (показывается) */
-/* Слайд основной */
-/* Слайд по центру */
-/* Клонированный слайд */
-/* Стрелка не активная */
-/* Точки (булиты) */
-.slick-dots {
-  gap: 10px;
-  padding: 8px;
-}
-
-.slick-dots li {
-  width: 10px;
-  height: 10px;
-  font-size: 0;
-  background-color: #212121;
-  border-radius: 50%;
-}
-
-/* Активная точка */
-.slick-dots li.slick-active {
-  background-color: transparent;
-  border: 1px solid #212121;
-}
-
-/* Элемент точки *//*# sourceMappingURL=main.css.map */
+.team__slider .slick-dots {
+  padding: 24px;
+}/*# sourceMappingURL=main.css.map */
