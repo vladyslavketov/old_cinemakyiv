@@ -6,16 +6,15 @@
   background: $color-bg__w;
   box-shadow: 0 0 4px rgb(0 0 0 / 30%);
   border-radius: 4px;
-  width: 100%;
-  
+  // width: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
 }
 
 .team__card {
+  flex-basis: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   height: 100%;
-  
 }
 
 .team__desc {
@@ -46,8 +45,20 @@
   padding: 4px;
 }
 
-.team__slider .slick-track {
-  gap: 16px;
+/* Стрілки */
+.team__slider .slick-arrow {
+  transform: translateY(calc(-50% - 30px));
+  height: calc(100% - 60px) ;
+}
+
+/* Стрелка влево */
+.team__slider .slick-arrow.slick-prev {
+  left: -32px;
+}
+
+/* Стрелка вправо */
+.team__slider .slick-arrow.slick-next {
+  right: -32px;
 }
 
 .team__slider .slick-dots {

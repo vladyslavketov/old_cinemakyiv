@@ -26,6 +26,11 @@ button {
   list-style: none;
 }
 
+:root {
+  --indent: 24px;
+  --items: 3;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
@@ -88,7 +93,7 @@ h6 {
   margin-bottom: 20px;
 }
 
-.clients-slide__desc, .clients-slide__container, .nav__list, .header__container, .slick-dots, .socials__link, .socials, .header__logo {
+.clients-slide__desc, .clients-slide__container, .clients-slide__item, .clients-slide__list, .nav__list, .header__container, .slick-dots, .socials__link, .socials, .header__logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -301,7 +306,12 @@ h6 {
 }
 
 .nav__list {
-  gap: 15px;
+  gap: 36px;
+}
+@media screen and (min-width: 768px) {
+  .nav__list {
+    gap: 16px;
+  }
 }
 .menu-container.is-open .nav__list {
   -webkit-box-orient: vertical;
@@ -315,6 +325,8 @@ h6 {
 }
 
 .hero.section {
+  max-width: 1600px;
+  margin: 0 auto;
   min-height: 320px;
   background-color: #495c77;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(33, 33, 33, 0.7)), to(rgba(33, 33, 33, 0.7))), url(../images/hero/hlop__1600.jpg);
@@ -349,6 +361,20 @@ h6 {
   font-weight: 700;
   color: #495c77;
   background-color: #f0faff;
+}
+
+.clients-slide__img {
+  max-width: 60px;
+}
+@media screen and (min-width: 768px) {
+  .clients-slide__img {
+    max-width: 90px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients-slide__img {
+    max-width: 120px;
+  }
 }
 
 .clients-slide__container {
@@ -413,10 +439,11 @@ h6 {
   -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
           box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
   border-radius: 4px;
-  width: 100%;
 }
 
 .team__card {
+  -ms-flex-preferred-size: auto;
+      flex-basis: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -471,8 +498,21 @@ h6 {
   padding: 4px;
 }
 
-.team__slider .slick-track {
-  gap: 16px;
+/* Стрілки */
+.team__slider .slick-arrow {
+  -webkit-transform: translateY(calc(-50% - 30px));
+          transform: translateY(calc(-50% - 30px));
+  height: calc(100% - 60px);
+}
+
+/* Стрелка влево */
+.team__slider .slick-arrow.slick-prev {
+  left: -32px;
+}
+
+/* Стрелка вправо */
+.team__slider .slick-arrow.slick-next {
+  right: -32px;
 }
 
 .team__slider .slick-dots {

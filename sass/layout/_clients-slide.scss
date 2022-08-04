@@ -7,6 +7,26 @@
   background-color: $color-bg__main;
 }
 
+.clients-slide__list {
+  @extend %flexC;
+}
+
+.clients-slide__item{
+  @extend %flexC;
+}
+
+.clients-slide__img {
+  max-width: 60px;
+
+  @media screen and (min-width: 768px) {
+    max-width: 90px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 120px;
+  }
+}
+
 .clients-slide__container {
   @extend %flexC;
   flex-direction: column;

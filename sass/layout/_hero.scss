@@ -1,4 +1,6 @@
 .hero.section {
+  max-width: 1600px;
+  margin: 0 auto;
   min-height: 320px;
   background-color: $color-bg__block;
   background-image: linear-gradient(rgba(33, 33, 33, 0.7), rgba(33, 33, 33, 0.7)), url(../images/hero/hlop__1600.jpg);
