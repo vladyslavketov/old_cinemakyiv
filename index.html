@@ -13,15 +13,20 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
     <!-- таблиця стилів -->
     <link rel="stylesheet" href="./css/main.min.css">
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./images/favicon/site.webmanifest">
   </head>
   <body>
     <header class="header">
       <div class="header__container container">
         <a class="logo header__logo link" href="./index.html">
-          ck
-          <!-- <svg class="logo__icon" width="24" height="24">
-            <use href="./images/icons.svg#logo-bg-transparent"></use>
-          </svg> -->
+          <svg class="logo__icon" width="24" height="24">
+            <use href="./images/logo.svg#logo"></use>
+          </svg>
+          <span class="logo__text">Cinema Kyiv</span>
         </a>
         <div class="menu-container" id="menu-container" data-menu>
           <!-- навігація -->
@@ -33,12 +38,6 @@
               <li class="nav__item"><a class="nav__link link" href="./casting.html">Для акторів</a></li>
             </ul>
           </nav>
-          <!-- соціальні мережі -->
-          <!-- <ul class="header__socials list">
-            <li class="header__socials-item socials__item"><a class="header__socials-link link" href="#">Talegram</a></li>
-            <li class="header__socials-item socials__item"><a class="header__socials-link link" href="#">Instagram</a></li>
-            <li class="header__socials-item socials__item"><a class="header__socials-link link" href="#">Facebook</a></li>
-          </ul> -->
         </div>
         <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu-container" data-menu-button>
           <span class="burger-line"></span>
@@ -61,29 +60,10 @@
           <div class="clients-slide__inner">
             <ul class="clients-slide__list list clients__slider">
               <li class="clients-slide__item slider__item">
-                <svg class="clients-slide__img" viewBox="0 0 465.145 48.568" width="">
-                  <path d="M436.74 12.386c-4.73 0-8.362 1.946-11.408 5.512-1.816-3.503-5.253-5.512-9.794-5.512-4.99 0-7.972 2.658-10.242 5.575v-4.92h-9.857v34.75h9.85V28.4c0-4.67 2.27-7.07 5.96-7.07s5.77 2.4 5.77 7.07v19.39h9.86V28.4c0-4.67 2.26-7.07 5.96-7.07s5.77 2.4 5.77 7.07v19.39h9.853V25.16c0-8.365-4.41-12.774-11.74-12.774zM378.17.454h9.856V47.79h-9.857zm-31.547 12.97v-1.362c0-2.592 1.294-3.762 3.564-3.762 1.684 0 3.046.325 4.472.845V.975C352.84.39 350.77 0 347.65 0c-3.5 0-6.16.908-7.972 2.724-1.815 1.816-2.792 4.604-2.792 8.43v2.203h-4.08v8.107h4.08v26.324h9.857V21.464h13.684"/>
-                  <path d="M332.81 13.424h27.624v8.04H332.81z"/>
-                  <circle cx="365.358" cy="5.046" r="4.592"/>
-                  <path d="M360.435 47.79h9.85V13.423h-9.85"/>
-                  <path d="M360.435 47.79h9.85V13.423h-9.85"/>
-                  <path d="M360.435 47.79h9.85V13.423h-9.85"/>
-                  <circle class="main-logo__svg-dot" cx="460.553" cy="43.196" r="4.592"/>
-                  <path d="M312.812 13.553c-9.27 0-16.082 7.78-16.082 17.507 0 10.438 7.523 17.507 16.73 17.507 6.352 0 10.44-2.53 13.813-6.29l-3.115-2.79c-2.724 2.855-5.966 4.734-10.57 4.734-5.897 0-11.087-4.08-11.8-11.15h26.583c.07-.77.07-1.29.07-1.75 0-9.85-5.7-17.76-15.62-17.76zM301.788 29.05c.713-6.484 5.12-11.28 10.892-11.28 6.615 0 10.116 5.186 10.702 11.28h-21.594zM278.03 42.082l-11.283-27.816h-5.512l14.525 33.782h4.408l14.588-33.782h-5.38"/>
-                  <circle cx="252.302" cy="5.034" r="2.924"/>
-                  <path d="M249.805 14.266h4.995V47.79h-4.995zM231.75 4.15h-4.99v10.116h-4.667v4.41h4.667v20.23c0 6.81 4.086 9.467 9.466 9.467 2.397 0 4.277-.517 6.03-1.425v-4.28c-1.754.843-3.18 1.168-4.864 1.168-3.374 0-5.644-1.492-5.644-5.578V18.674h10.64v-4.41h-10.64V4.15zM190.615.454V47.79h4.995V.454m21.286 14.648h-6.225l-15.06 15.31 16.83 17.378h6.23L201.6 30.41m-34.03-16.663c-4.927 0-8.496 1.167-12.19 2.85l1.492 4.087c3.11-1.428 6.225-2.4 10.18-2.4 6.287 0 9.92 3.112 9.92 9.078V28.4c-2.984-.845-5.967-1.428-10.25-1.428-8.49 0-14.33 3.762-14.33 10.958 0 7.003 6.227 10.57 12.515 10.57 5.903 0 9.73-2.722 12.064-5.705v4.992h4.93v-20.49c0-4.28-1.16-7.52-3.5-9.855-2.39-2.398-6.09-3.694-10.83-3.694zm9.465 21.72c0 5.318-4.993 9.013-11.15 9.013-4.54 0-8.43-2.46-8.43-6.677 0-4.15 3.57-6.872 9.793-6.872 4.08 0 7.323.72 9.788 1.43v3.12zm-46.72-21.914c-10.116 0-17.507 8.04-17.507 17.507 0 9.596 7.328 17.507 17.38 17.507 10.112 0 17.572-8.04 17.572-17.507 0-9.596-7.394-17.507-17.446-17.507zm0 30.54c-7.07 0-12.386-5.837-12.386-13.033 0-7.2 4.99-13.1 12.26-13.1 7.06 0 12.44 5.9 12.44 13.1 0 7.196-5.06 13.033-12.32 13.033zM100.14 14.266h4.994V47.79h-4.995z"/>
-                  <circle cx="102.636" cy="5.034" r="2.924"/>
-                  <path d="M86.634 20.686c-2.592-3.762-6.615-7.133-12.84-7.133-8.04 0-16.013 6.483-16.013 17.44 0 11.154 7.98 17.507 16.02 17.507 6.16 0 10.12-3.432 12.84-7.45v6.74h5V.455h-5v20.232zm-11.932 23.34c-6.35 0-11.8-5.054-11.8-12.966 0-8.236 5.317-13.033 11.8-13.033 6.225 0 12.127 5.187 12.127 12.904 0 7.85-5.91 13.1-12.13 13.1zM37.3 13.748c-4.925 0-8.494 1.167-12.19 2.85l1.494 4.087c3.11-1.428 6.225-2.4 10.18-2.4 6.287 0 9.92 3.112 9.92 9.078V28.4c-2.984-.845-5.967-1.428-10.25-1.428-8.49 0-14.328 3.762-14.328 10.958 0 7.003 6.225 10.57 12.518 10.57 5.897 0 9.725-2.722 12.06-5.705v4.992h4.925v-20.49c0-4.28-1.17-7.52-3.5-9.855-2.4-2.398-6.1-3.694-10.83-3.694zm9.467 21.72c0 5.318-4.995 9.013-11.15 9.013-4.54 0-8.433-2.46-8.433-6.67 0-4.15 3.57-6.87 9.794-6.87 4.08 0 7.323.72 9.79 1.43v3.116zM4.995 23.02v-8.755H0v33.523h4.995V34.43c0-10.115 5.966-15.365 13.294-15.365h.38v-5.383c-6.35-.258-11.22 3.762-13.68 9.337z"/>
-                </svg>
-              </li>
-              <li class="clients-slide__item slider__item">
                 <img class="clients-slide__img" src="https://film.ua/images/logo.png" alt="">
               </li>
               <li class="clients-slide__item slider__item">
                 <img class="clients-slide__img" src="https://druzhbanarodov.ua/druzhba/clients/kinorob.png" alt="">
-              </li>
-              <li class="clients-slide__item slider__item">
-                <img class="clients-slide__img" src="https://scontent.fiev20-1.fna.fbcdn.net/v/t39.30808-6/277674706_379534720846826_6225195010868405760_n.png?_nc_cat=107&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=Od_ySqqW1MkAX9ADAj1&_nc_oc=AQnS1-qQ_t5IauL45gJ4K2Kl0EH0d5hFCs-Q7cnWvoIRG1PRzuR8pmcBLe1jsjELqhk&tn=chCFQh9eeIWTMUIL&_nc_ht=scontent.fiev20-1.fna&oh=00_AT-L_MKCH25VOPpJ2Kklw4AzGmPXS85HwysWd04D2DU-XQ&oe=62EFE262" alt="">
               </li>
               <li class="clients-slide__item slider__item">
                 <img class="clients-slide__img" src="https://pronto.kiev.ua/assets/logo_small-196e91cc695e0fc58a2aace8e9976eea.svg" alt="">
@@ -93,6 +73,89 @@
               </li>
             </ul>
           </div>
+        </div>
+      </section>
+      <!-- секція дія -->
+      <section class="form section">
+        <div class="form__container container">
+          <div class="wrapper">
+            <form class="form__body" action="#" id="form">
+              <h2 class="form__title">Send me your info</h2>
+              <div class="form__item">
+                <label class="form__label" for="formName">Ім'я:</label>
+                <input class="form__input _req" id="formName" type="text" name="name">
+              </div>
+              <div class="form__item">
+                <label class="form__label" for="formEmail">E-mail:</label>
+                <input class="form__input _req _email" id="formEmail" type="email" name="email">
+              </div>
+              <div class="form__item">
+                <div class="form__label">Є робота чи не немає роботи ?</div>
+                <div class="options">
+                  <div class="options__item">
+                    <input class="options__input" id="workYes" type="radio" name="work" value="workyes" checked>
+                    <label class="options__label" for="workYes"><span>Робота є</span></label>
+                  </div>
+                  <div class="options__item">
+                    <input class="options__input" id="workNo" type="radio" name="work" value="workno">
+                    <label class="options__label" for="workNo"><span>Роботи немає</span></label>
+                  </div>
+                </div>
+              </div>
+              <div class="form__item">
+                <label class="form__label" for="formMessage">Повідомлення:</label>
+                <textarea class="form__input" name="message" id="formMessage"></textarea>
+              </div>
+              <div class="form__item">
+                <div class="form__label">Вік</div>
+                <select name="age" class="select">
+                  <option value="від 18 до 25" selected>Молодий</option>
+                  <option value="від 25 до 45">Старий</option>
+                  <option value="від 45">Дуже старий</option>
+                </select>
+              </div>
+              <div class="form__item">
+                <div class="form__label">Додати фото</div>
+                <div class="file">
+                  <div class="file__item">
+                    <input class="file__input" id="formImage" type="file" name="image" accept=".jpg, .png, .gif"> 
+                    <!-- <div class="file__button">Обрати</div> -->
+                  </div>
+                  <div class="file_preview" id="formPreview"></div>
+                </div>
+              </div>
+              <div class="form__item">
+                 <div class="checkbox">
+                   <input class="checkbox__input _req" id="formAgreement" type="checkbox" name="agreement" checked>
+                   <label class="checkbox__label" for="formAgreement">Я даю згоду на обробку моїх персональних данних у відповідності до <a href="#">умов</a> </label>
+                 </div>
+              </div>
+              <button class="form__button" type="submit">Надіслати</button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <!-- секція дія -->
+      <section class="actions section">
+        <div class="actions__container container">
+          <h2 class="actions__title title">Як записатися на зйомки?</h2>
+          <ul class="actions__list list">
+            <li class="actions__item">
+              <h3 class="actions__name">Для про професійних акторів</h3>
+              <p class="actions__desc">Надішліть нам свій шоуріл та портфоліо</p>
+              <button class="actions__btn btn" type="button" dataModalOpen--localform>Надіслати шоуріл та портфоліо</button>
+            </li>
+            <li class="actions__item">
+              <h3 class="actions__name">Для про акторів аматорів</h3>
+              <p class="actions__desc">Надішліть нам свій шоуріл та портфоліо</p>
+              <button class="actions__btn btn" type="button">Надіслати шоуріл та портфоліо</button>
+            </li>
+            <li class="actions__item">
+              <h3 class="actions__name">Для акторів массових сцен</h3>
+              <p class="actions__desc">Надішліть нам свої актуальні фото та запомніть анкету</p>
+              <button class="actions__btn btn" type="button" dataModalOpen--gform>Надіслати шоуріл та портфоліо</button>
+            </li>
+          </ul>
         </div>
       </section>
       <!-- секція переваги -->
@@ -341,8 +404,6 @@
           </ul>
         </div>
       </section>
-
-      
       <!-- <section class="section">
         <div class="container">
           <h2 class="title"></h2>
@@ -350,15 +411,44 @@
       </section> -->
     </main>
     <footer>
-
     </footer>
-    <!-- підключаємо мобільне меню -->
-    <script src="./js/mobile-menu.js"></script>
+    <!-- додаємо модальне вікно -->
+    <div class="backdrop is-hidden" dataModal--localform>
+      <div class="modal">
+        <button class="modal__btn-close" type="button" dataModalClose--localform>
+          <span class="cross-line"></span>
+          <span class="cross-line"></span>
+        </button>
+        <h2>Перевірка зв'язку </h2>
+        <div class="modal__gform-wrap">
+          <!-- <iframe class="modal__gform" src="https://docs.google.com/forms/d/e/1FAIpQLScbUqN2cPTOKRuYPNxjUlzWOsUxVIZixrNERfF_YlxqUoVeCA/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Завантаження…</iframe> -->
+        </div>
+      </div>
+    </div>
+    <!-- додаємо модальне вікно -->
+    <div class="backdrop is-hidden" dataModal--gform>
+      <div class="modal">
+        <button class="modal__btn-close" type="button" dataModalClose--gform>
+          <span class="cross-line"></span>
+          <span class="cross-line"></span>
+        </button>
+        <h2>Перевірка зв'язку </h2>
+        <div class="modal__gform-wrap">
+          <!-- <iframe class="modal__gform" src="https://docs.google.com/forms/d/e/1FAIpQLScbUqN2cPTOKRuYPNxjUlzWOsUxVIZixrNERfF_YlxqUoVeCA/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Завантаження…</iframe> -->
+        </div>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
     <!-- підключаємо jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- підключаємо слайдер слік -->
     <script src="./js/slick.min.js"></script>
-    <!-- підключаємо мій слайдер -->
-    <script src="./js/myslick.js"></script>
+    <!-- підключаємо локальный слайдер -->
+    <script src="./js/slick-local.js"></script>
+    <!-- підключаємо мобільне меню -->
+    <script src="./js/mobile-menu.js"></script>
+    <!-- <script src="./js/modal.js"></script> -->
+    <script src="./js/sendform.js"></script>
+    <!-- <script src="./js/modal.js"></script> -->
   </body>
 </html>

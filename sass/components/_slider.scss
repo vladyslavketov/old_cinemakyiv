@@ -44,7 +44,7 @@
 /* Точки (булиты) */
 .slick-dots {
   @extend .list;
-  @extend %flexC;
+  @extend %flex;
   gap: 10px;
 }
 

@@ -1,18 +1,18 @@
 .clients-slide {
   padding: 24px 0;
 
-  font-family: $font-f__h;
+  font-family: var(--font-f__h);
   font-weight: 700;
-  color: $color__secondary;
-  background-color: $color-bg__main;
+  color: var(--color__secondary);
+  background-color: var(--color-bg__main);
 }
 
 .clients-slide__list {
-  @extend %flexC;
+  @extend %flex;
 }
 
 .clients-slide__item{
-  @extend %flexC;
+  @extend %flex;
 }
 
 .clients-slide__img {
@@ -28,14 +28,14 @@
 }
 
 .clients-slide__container {
-  @extend %flexC;
+  @extend %flex;
   flex-direction: column;
   gap: 30px;
   max-width: 100%;
 }
 
 .clients-slide__desc {
-  @extend %flexC;
+  @extend %flex;
   min-width: 60px;
 
   font-size: 16px;

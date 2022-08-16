@@ -2,7 +2,7 @@
   max-width: 1600px;
   margin: 0 auto;
   min-height: 320px;
-  background-color: $color-bg__block;
+  background-color: var(--color-bg__block);
   background-image: linear-gradient(rgba(33, 33, 33, 0.7), rgba(33, 33, 33, 0.7)), url(../images/hero/hlop__1600.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -14,7 +14,7 @@
 
 .hero__title,
 .hero__desc {
-  color: $color__w;
+  color: var(--color__w);
 }
 
 .hero__title {

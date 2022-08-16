@@ -1,22 +1,20 @@
 .benefits__list {
-  gap: 15px;
-  @include cardSet;
+  @extend %cardSet;
+  --gap: 16px;
 }
 
 .benefits__item {
-  @include cardSet__item;
+  @extend %cardSet__item;
+  @extend %flex;
+  flex-direction: column;
+  gap: 16px;
   padding: 20px;
-
   text-align: center;
 
-  background-color: $color-bg__main;
-  border-radius: 8px;
-
-  @media screen and (min-width:1200px) {
-    @include cardSet__item ($items: 3);
-  }
+  background-color: var(--color-bg__main);
+  border-radius: var(--border__radius);
 }
 
-.benefits__name {
-  margin-bottom: 16px;
+.benefits__desc {
+  flex-grow: 1;
 }

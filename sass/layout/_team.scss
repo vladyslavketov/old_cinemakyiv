@@ -1,9 +1,9 @@
 .team {
-  background-color: $color-bg__main;
+  background-color: var(--color-bg__main);
 }
 
 .team__item {
-  background: $color-bg__w;
+  background: var(--color-bg__w);
   box-shadow: 0 0 4px rgb(0 0 0 / 30%);
   border-radius: 4px;
   // width: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));

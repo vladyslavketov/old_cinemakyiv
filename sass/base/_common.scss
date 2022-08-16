@@ -3,13 +3,13 @@
 // }
 
 body {
-  font-family: $font-f__main;
+  font-family: var(--font-f__main);
   font-size: 14px;
-  line-height: (16px/14px);
+  line-height: calc(16px / 14px);
   letter-spacing: 0.03em;
-  color: $color__main;
-  background-color: $color-bg__w;
-  padding-top: $height_header+1;
+  color: var(--color__main);
+  background-color: var(--color-bg__w);
+  padding-top: var(--height_header)+1;
 }
 
 body.modal-open,
@@ -29,7 +29,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: $font-f__h;
+  font-family: var(--font-f__h);
 }
 
 .section {

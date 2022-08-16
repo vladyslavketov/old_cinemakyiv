@@ -1,9 +1,23 @@
+// .logo {
+//   color: var(--color__main);
+// }
+
 .header__logo {
-  @extend %flexC;
+  @extend %flex;
   // min-width: 200px ;
   margin-right: auto;
 
-  font-family: $font-f__h;
+  font-family: var(--font-f__h);
   font-size: 32px;
   font-weight: 600;
+}
+
+.logo__icon {
+  fill: currentColor;
+}
+
+.logo__text {
+  font-family: var(--font-f__secondary);
+  text-transform: uppercase;
+  color: currentColor;
 }

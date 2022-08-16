@@ -1,10 +1,10 @@
 .socials {
-  @extend %flexC;
+  @extend %flex;
   gap: 16px;
 }
 
 .socials__link {
-  @extend %flexC;
+  @extend %flex;
   width: 44px;
   height: 44px;
 }
