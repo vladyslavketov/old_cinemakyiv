@@ -8,34 +8,34 @@
     <!-- Шрифти -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Source+Sans+3:wght@400;600;700&family=Source+Serif+Pro:wght@400;600;700&display=swap" rel="stylesheet">
-    <!-- нормалізатор -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
-    <!-- таблиця стилів -->
-    <link rel="stylesheet" href="./css/main.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Nunito:wght@400;600;700;800;900&family=Source+Serif+Pro:wght@400;600;700;900&display=swap" rel="stylesheet">
     <!-- favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
     <link rel="manifest" href="./images/favicon/site.webmanifest">
+    <!-- нормалізатор -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+    <!-- таблиця стилів -->
+    <link rel="stylesheet" href="./css/main.min.css">
   </head>
   <body>
     <header class="header">
       <div class="header__container container">
         <a class="logo header__logo link" href="./index.html">
+          <span class="logo__text">Cinema</span>
           <svg class="logo__icon" width="24" height="24">
             <use href="./images/logo.svg#logo"></use>
           </svg>
-          <span class="logo__text">Cinema Kyiv</span>
+          <span class="logo__text">Kyiv</span>
         </a>
         <div class="menu-container" id="menu-container" data-menu>
           <!-- навігація -->
           <nav class="nav">
             <ul class="nav__list list">
               <li class="nav__item"><a class="nav__link link" href="./index.html">Головна</a></li>
-              <li class="nav__item"><a class="nav__link link" href="./portfolio.html">Наші проекти</a></li>
-              <li class="nav__item"><a class="nav__link link" href="./portfolio/movie.html">Movie</a></li>
-              <li class="nav__item"><a class="nav__link link" href="./casting.html">Для акторів</a></li>
+              <li class="nav__item"><a class="nav__link link" href="#">Наші проекти</a></li>
+              <li class="nav__item"><a class="nav__link link" href="#">Для акторів</a></li>
             </ul>
           </nav>
         </div>
@@ -50,112 +50,42 @@
       <!-- секція герой -->
       <section class="hero section">
         <div class="hero__container container">
-          <h1 class="hero__title title">Хто ми такі?</h1>
-          <p class="hero__desc">Cinema Kyiv Agancy - Професіональне кастинг-агенство з досвідом роботи у сфері більше 15 років. Провідні виробники медіа контенту наймають акторів за допомогою Cinema Kyiv Agancy.</p>
+          <p class="hero__subtitle subtitle">Хто такі</p>
+          <h1 class="hero__title title" lang="en">Cinema Kyiv Agancy?</h1>
+          <p class="hero__desc">Професіональне кастинг-агенство з досвідом роботи у сфері більше 15 років. Провідні виробники медіа контенту наймають акторів за допомогою Cinema Kyiv Agancy.</p>
         </div>
       </section>
-      <section class="clients-slide">
-        <div class="clients-slide__container container">
-          <p class="clients-slide__desc">Нам довіряють провідні компанії</p>
-          <div class="clients-slide__inner">
-            <ul class="clients-slide__list list clients__slider">
-              <li class="clients-slide__item slider__item">
-                <img class="clients-slide__img" src="https://film.ua/images/logo.png" alt="">
+      <!-- секція партенри -->
+      <section class="partners-slide section">
+        <div class="partners-slide__container container">
+          <p class="partners-slide__desc subtitle">Нам довіряють компанії:</p>
+          <div class="partners-slide__inner">
+            <ul class="partners-slide__list list partners__slider">
+              <li class="partners-slide__item slider__item">
+                <img class="partners-slide__img" src="/images/partners/partner--filmua.png" alt="Film.ua" width="120">
               </li>
-              <li class="clients-slide__item slider__item">
-                <img class="clients-slide__img" src="https://druzhbanarodov.ua/druzhba/clients/kinorob.png" alt="">
+              <li class="partners-slide__item slider__item">
+                <img class="partners-slide__img" src="./images/partners/partner--radioactivefilm.png" alt="Kinorob" width="120">
               </li>
-              <li class="clients-slide__item slider__item">
-                <img class="clients-slide__img" src="https://pronto.kiev.ua/assets/logo_small-196e91cc695e0fc58a2aace8e9976eea.svg" alt="">
+              <li class="partners-slide__item slider__item">
+                <img class="partners-slide__img" src="./images/partners/partner--kinorob.png" alt="Kinorob" width="120">
               </li>
-              <li class="clients-slide__item slider__item">
-                <img class="clients-slide__img" src="https://toypictures.com.ua/assets/logo-23cd493e40933221019894e734831a94.png" alt="">
+              <li class="partners-slide__item slider__item">
+                <img class="partners-slide__img" src="./images/partners/partner--prontofilm.png" alt="Pronto Film" width="120">
+              </li>
+              <li class="partners-slide__item slider__item">
+                <img class="partners-slide__img" src="./images/partners/partner--toypictures-2 @2x.jpg" alt="Toy Pictures" width="120">
               </li>
             </ul>
           </div>
         </div>
       </section>
-      <!-- секція дія -->
-      <section class="form section">
-        <div class="form__container container">
-          <div class="wrapper">
-            <form class="form__body" action="#" id="form">
-              <h2 class="form__title">Send me your info</h2>
-              <div class="form__item">
-                <label class="form__label" for="formName">Ім'я:</label>
-                <input class="form__input _req" id="formName" type="text" name="name">
-              </div>
-              <div class="form__item">
-                <label class="form__label" for="formEmail">E-mail:</label>
-                <input class="form__input _req _email" id="formEmail" type="email" name="email">
-              </div>
-              <div class="form__item">
-                <div class="form__label">Є робота чи не немає роботи ?</div>
-                <div class="options">
-                  <div class="options__item">
-                    <input class="options__input" id="workYes" type="radio" name="work" value="workyes" checked>
-                    <label class="options__label" for="workYes"><span>Робота є</span></label>
-                  </div>
-                  <div class="options__item">
-                    <input class="options__input" id="workNo" type="radio" name="work" value="workno">
-                    <label class="options__label" for="workNo"><span>Роботи немає</span></label>
-                  </div>
-                </div>
-              </div>
-              <div class="form__item">
-                <label class="form__label" for="formMessage">Повідомлення:</label>
-                <textarea class="form__input" name="message" id="formMessage"></textarea>
-              </div>
-              <div class="form__item">
-                <div class="form__label">Вік</div>
-                <select name="age" class="select">
-                  <option value="від 18 до 25" selected>Молодий</option>
-                  <option value="від 25 до 45">Старий</option>
-                  <option value="від 45">Дуже старий</option>
-                </select>
-              </div>
-              <div class="form__item">
-                <div class="form__label">Додати фото</div>
-                <div class="file">
-                  <div class="file__item">
-                    <input class="file__input" id="formImage" type="file" name="image" accept=".jpg, .png, .gif"> 
-                    <!-- <div class="file__button">Обрати</div> -->
-                  </div>
-                  <div class="file_preview" id="formPreview"></div>
-                </div>
-              </div>
-              <div class="form__item">
-                 <div class="checkbox">
-                   <input class="checkbox__input _req" id="formAgreement" type="checkbox" name="agreement" checked>
-                   <label class="checkbox__label" for="formAgreement">Я даю згоду на обробку моїх персональних данних у відповідності до <a href="#">умов</a> </label>
-                 </div>
-              </div>
-              <button class="form__button" type="submit">Надіслати</button>
-            </form>
-          </div>
-        </div>
-      </section>
-      <!-- секція дія -->
-      <section class="actions section">
-        <div class="actions__container container">
-          <h2 class="actions__title title">Як записатися на зйомки?</h2>
-          <ul class="actions__list list">
-            <li class="actions__item">
-              <h3 class="actions__name">Для про професійних акторів</h3>
-              <p class="actions__desc">Надішліть нам свій шоуріл та портфоліо</p>
-              <button class="actions__btn btn" type="button" dataModalOpen--localform>Надіслати шоуріл та портфоліо</button>
-            </li>
-            <li class="actions__item">
-              <h3 class="actions__name">Для про акторів аматорів</h3>
-              <p class="actions__desc">Надішліть нам свій шоуріл та портфоліо</p>
-              <button class="actions__btn btn" type="button">Надіслати шоуріл та портфоліо</button>
-            </li>
-            <li class="actions__item">
-              <h3 class="actions__name">Для акторів массових сцен</h3>
-              <p class="actions__desc">Надішліть нам свої актуальні фото та запомніть анкету</p>
-              <button class="actions__btn btn" type="button" dataModalOpen--gform>Надіслати шоуріл та портфоліо</button>
-            </li>
-          </ul>
+      <!-- секція зворотній зв'язок -->
+      <section class="feedback section">
+        <div class="feedback__container container">
+          <h2 class="feedback__title visually-hidden"></h2>
+          <p class="feedback__desc">Заповніть та надішліть нам заявку</p>
+          <button class="feedback__btn btn" type="button" dataModalOpen--gform>Заповнити</button>
         </div>
       </section>
       <!-- секція переваги -->
@@ -178,239 +108,107 @@
           </ul>
         </div>
       </section>
+      <!-- секція зворотній зв'язок -->
+      <section class="feedback section">
+        <div class="feedback__container container">
+          <h2 class="feedback__title visually-hidden"></h2>
+          <p class="feedback__desc">Заповніть та надішліть нам заявку</p>
+          <button class="feedback__btn btn" type="button" dataModalOpen--gform>Заповнити</button>
+        </div>
+      </section>
       <!-- секція команда -->
       <section class="team section">
         <div class="team__container container">
-          <h2 class="team title">Наша команда</h2>
+          <h2 class="team__title title">Наша команда</h2>
           <ul class="team__list list team__slider">
             <li class="team__item slider__item">
-              <div class="team__card">
-                <img class="team__img" src="./images/team/jack.png" alt="" width="270">
-                <div class="team__desc">
-                  <h3 class="team__name">Ігор Васильович</h3>
-                  <div class="team__position-wrap">
-                    <p class="team__position">Кастинг-директор</p>
-                    <p class="team__position">Засновник "Cinema Kyiv agancy"</p>
-                  </div>
-                  <ul class="socials list">
-                    <li class="socials__item">
-                      <a href="#" class="socials__link link">
-                        <svg class="socials__icon" aria-label="instagram" width="20px" height="20px">
-                          <use href="./images/icons.svg#instagram"></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li class="socials__item">
-                      <a href="#" class="socials__link link">
-                        <svg class="socials__icon" aria-label="facebook" width="20px" height="20px">
-                          <use href="./images/icons.svg#facebook"></use>
-                        </svg>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
+              <img class="team__img" src="./images/team/jack.png" alt="" width="270">
+              <div class="team__desc">
+                <h3 class="team__name">Ігор | Senior</h3>
+                <p class="team__position">Кастинг-директор</p>
+                <p class="team__position">Засновник "Cinema Kyiv agancy"</p>
               </div>
             </li>
             <li class="team__item slider__item">
-              <div class="team__card">
-                <img class="team__img" src="./images/team/jack.png" alt="" width="270">
-                <div class="team__desc">
-                  <h3 class="team__name">Вероніка</h3>
-                  <div class="team__position-wrap">
-                    <p class="team__position">Кастинг-менеджер</p>
-                  </div>
-                  <ul class="socials list">
-                    <li class="socials__item">
-                      <a href="#" class="socials__link link">
-                        <svg class="socials__icon" aria-label="instagram" width="20px" height="20px">
-                          <use href="./images/icons.svg#instagram"></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li class="socials__item">
-                      <a href="#" class="socials__link link">
-                        <svg class="socials__icon" aria-label="facebook" width="20px" height="20px">
-                          <use href="./images/icons.svg#facebook"></use>
-                        </svg>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
+              <img class="team__img" src="./images/team/jack.png" alt="" width="270">
+              <div class="team__desc">
+                <h3 class="team__name">Вероніка | Senior</h3>
+                <p class="team__position">Кастинг-менеджер</p>
               </div>
             </li>
             <li class="team__item slider__item">
-              <div class="team__card">
-                <img class="team__img" src="./images/team/jack.png" alt="" width="270">
-                <div class="team__desc">
-                  <h3 class="team__name">Владислав</h3>
-                  <div class="team__position-wrap">
-                    <p class="team__position">Веб розробник</p>
-                    <p class="team__position">Офіс менеджер</p>
-                  </div>
-                  <ul class="socials list">
-                    <li class="socials__item">
-                      <a href="#" class="socials__link link">
-                        <svg class="socials__icon" aria-label="instagram" width="20px" height="20px">
-                          <use href="./images/icons.svg#instagram"></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li class="socials__item">
-                      <a href="#" class="socials__link link">
-                        <svg class="socials__icon" aria-label="facebook" width="20px" height="20px">
-                          <use href="./images/icons.svg#facebook"></use>
-                        </svg>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
+              <img class="team__img" src="./images/team/jack.png" alt="" width="270">
+              <div class="team__desc">
+                <h3 class="team__name">Владислав | Middle</h3>
+                <p class="team__position">Front-end розробник</p>
+                <p class="team__position">Контент-менеджер</p>
               </div>
             </li>
             <li class="team__item slider__item">
-              <div class="team__card">
-                <img class="team__img" src="./images/team/jack.png" alt="" width="270">
-                <div class="team__desc">
-                  <h3 class="team__name">Каріна</h3>
-                  <div class="team__position-wrap">
-                    <p class="team__position">Офіс менеджер</p>
-                  </div>
-                  <ul class="socials list">
-                    <li class="socials__item">
-                      <a href="#" class="socials__link link">
-                        <svg class="socials__icon" aria-label="instagram" width="20px" height="20px">
-                          <use href="./images/icons.svg#instagram"></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li class="socials__item">
-                      <a href="#" class="socials__link link">
-                        <svg class="socials__icon" aria-label="facebook" width="20px" height="20px">
-                          <use href="./images/icons.svg#facebook"></use>
-                        </svg>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
+              <img class="team__img" src="./images/team/jack.png" alt="" width="270">
+              <div class="team__desc">
+                <h3 class="team__name">Павло | Middle</h3>
+                <p class="team__position">Кастинг-менеджер</p>
               </div>
             </li>
             <li class="team__item slider__item">
-              <div class="team__card">
-                <img class="team__img" src="./images/team/jack.png" alt="" width="270">
-                <div class="team__desc">
-                  <h3 class="team__name">Павло</h3>
-                  <div class="team__position-wrap">
-                    <p class="team__position">Кастинг-менеджер</p>
-                  </div>
-                  <ul class="socials list">
-                    <li class="socials__item">
-                      <a href="#" class="socials__link link">
-                        <svg class="socials__icon" aria-label="instagram" width="20px" height="20px">
-                          <use href="./images/icons.svg#instagram"></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li class="socials__item">
-                      <a href="#" class="socials__link link">
-                        <svg class="socials__icon" aria-label="facebook" width="20px" height="20px">
-                          <use href="./images/icons.svg#facebook"></use>
-                        </svg>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
+              <img class="team__img" src="./images/team/jack.png" alt="" width="270">
+              <div class="team__desc">
+                <h3 class="team__name">Аліна | Middle</h3>
+                <p class="team__position">Кастинг-менеджер</p>
               </div>
             </li>
             <li class="team__item slider__item">
-              <div class="team__card">
-                <img class="team__img" src="./images/team/jack.png" alt="" width="270">
-                <div class="team__desc">
-                  <h3 class="team__name">Аліна</h3>
-                  <div class="team__position-wrap">
-                    <p class="team__position">Кастинг-менеджер</p>
-                  </div>
-                  <ul class="socials list">
-                    <li class="socials__item">
-                      <a href="#" class="socials__link link">
-                        <svg class="socials__icon" aria-label="instagram" width="20px" height="20px">
-                          <use href="./images/icons.svg#instagram"></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li class="socials__item">
-                      <a href="#" class="socials__link link">
-                        <svg class="socials__icon" aria-label="facebook" width="20px" height="20px">
-                          <use href="./images/icons.svg#facebook"></use>
-                        </svg>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
+              <img class="team__img" src="./images/team/jack.png" alt="" width="270">
+              <div class="team__desc">
+                <h3 class="team__name">Лена | Junior</h3>
+                <p class="team__position">Кастинг-менеджер</p>
               </div>
             </li>
             <li class="team__item slider__item">
-              <div class="team__card">
-                <img class="team__img" src="./images/team/jack.png" alt="" width="270">
-                <div class="team__desc">
-                  <h3 class="team__name">Елена</h3>
-                  <div class="team__position-wrap">
-                    <p class="team__position">Кастинг-менеджер</p>
-                  </div>
-                  <ul class="socials list">
-                    <li class="socials__item">
-                      <a href="#" class="socials__link link">
-                        <svg class="socials__icon" aria-label="instagram" width="20px" height="20px">
-                          <use href="./images/icons.svg#instagram"></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li class="socials__item">
-                      <a href="#" class="socials__link link">
-                        <svg class="socials__icon" aria-label="facebook" width="20px" height="20px">
-                          <use href="./images/icons.svg#facebook"></use>
-                        </svg>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
+              <img class="team__img" src="./images/team/jack.png" alt="" width="270">
+              <div class="team__desc">
+                <h3 class="team__name">Олексій | Junior</h3>
+                <p class="team__position">Кастинг-менеджер</p>
               </div>
             </li>
             <li class="team__item slider__item">
-              <div class="team__card">
-                <img class="team__img" src="./images/team/jack.png" alt="" width="270">
-                <div class="team__desc">
-                  <h3 class="team__name">Олексій</h3>
-                  <div class="team__position-wrap">
-                    <p class="team__position">Кастинг-менеджер</p>
-                  </div>
-                  <ul class="socials list">
-                    <li class="socials__item">
-                      <a href="#" class="socials__link link">
-                        <svg class="socials__icon" aria-label="instagram" width="20px" height="20px">
-                          <use href="./images/icons.svg#instagram"></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li class="socials__item">
-                      <a href="#" class="socials__link link">
-                        <svg class="socials__icon" aria-label="facebook" width="20px" height="20px">
-                          <use href="./images/icons.svg#facebook"></use>
-                        </svg>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
+              <img class="team__img" src="./images/team/jack.png" alt="" width="270">
+              <div class="team__desc">
+                <h3 class="team__name">Наташа | Junior</h3>
+                <p class="team__position">Кастинг-менеджер</p>
               </div>
-            </li>     
+            </li>
+            <li class="team__item slider__item">
+              <img class="team__img" src="./images/team/jack.png" alt="" width="270">
+              <div class="team__desc">
+                <h3 class="team__name">Каріна | Middle</h3>
+                <p class="team__position">Офіс-менеджер</p>
+              </div>
+            </li>
           </ul>
         </div>
       </section>
-      <!-- <section class="section">
-        <div class="container">
-          <h2 class="title"></h2>
-        </div>
-      </section> -->
     </main>
-    <footer>
+    <footer class="footer">
+      <div class="socials">
+        <ul class="social__list list">
+          <li class="social__item">
+            <a href="https://www.instagram.com/cinemakiev_casting/" class="social__link link">
+              <svg class="social__icon" width="20" height="20">
+                <use href="./images/icons.svg#instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="https://www.facebook.com/groups/204498536735753" class="social__link link">
+              <svg class="social__icon" width="20" height="20">
+                <use href="./images/icons.svg#facebook"></use>
+              </svg>
+            </a>
+          </li >
+        </ul>
+      </div>
     </footer>
     <!-- додаємо модальне вікно -->
     <div class="backdrop is-hidden" dataModal--localform>
@@ -434,7 +232,7 @@
         </button>
         <h2>Перевірка зв'язку </h2>
         <div class="modal__gform-wrap">
-          <!-- <iframe class="modal__gform" src="https://docs.google.com/forms/d/e/1FAIpQLScbUqN2cPTOKRuYPNxjUlzWOsUxVIZixrNERfF_YlxqUoVeCA/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Завантаження…</iframe> -->
+          <iframe class="modal__gform" src="https://docs.google.com/forms/d/e/1FAIpQLScbUqN2cPTOKRuYPNxjUlzWOsUxVIZixrNERfF_YlxqUoVeCA/viewform?embedded=true"></iframe>
         </div>
       </div>
     </div>

@@ -1,0 +1,13 @@
+.feedback {
+  color: var(--color-bg__main);
+  background-color: var(--color__main);
+}
+
+.feedback__container {
+  @extend %flex;
+  gap: 16px;
+}
+
+.feedback__btn {
+  margin-left: auto;
+}

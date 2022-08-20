@@ -1,0 +1,8 @@
+.footer {
+  @extend %flex;
+  gap: 8px;
+
+  height: var(--height__header);
+  color: var(--color-bg__main);
+  background-color: var(--color__main);
+}

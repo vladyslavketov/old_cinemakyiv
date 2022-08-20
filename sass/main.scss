@@ -1,5 +1,5 @@
-@import "./base/reset";
 @import "./base/var";
+@import "./base/reset";
 @import "./base/common";
 
 @import "./utils/visually-hidden";
@@ -8,6 +8,7 @@
 
 @import "./components/logo";
 @import "./components/btn";
+@import "./components/feedback";
 @import "./components/modal";
 @import "./components/socials";
 @import "./components/slider";
@@ -15,7 +16,7 @@
 
 @import "./layout/header";
 @import "./layout/hero";
-@import "./layout/clients-slide";
+@import "./layout/partners";
 @import "./layout/form";
 @import "./layout/actions";
 @import "./layout/benefits";

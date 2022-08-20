@@ -1,10 +1,15 @@
-.socials {
+.social__list {
   @extend %flex;
-  gap: 16px;
+  gap: 4px;
 }
 
-.socials__link {
+.social__link {
   @extend %flex;
   width: 44px;
   height: 44px;
+}
+
+.social__icon {
+  display: block;
+  fill: currentColor;
 }

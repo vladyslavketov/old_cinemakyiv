@@ -1,3 +1,12 @@
+.benefits {
+  background-color: var(--color-bg__secondary);
+  color: var(--color__secondary);
+}
+
+.benefits__title {
+  margin-bottom: 20px;
+}
+
 .benefits__list {
   @extend %cardSet;
   --gap: 16px;
@@ -9,8 +18,10 @@
   flex-direction: column;
   gap: 16px;
   padding: 20px;
-  text-align: center;
 
+  text-align: center;
+  
+  box-shadow: var(--shadow);
   background-color: var(--color-bg__main);
   border-radius: var(--border__radius);
 }
