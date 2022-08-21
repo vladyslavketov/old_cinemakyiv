@@ -22,7 +22,7 @@ $(document).ready(function(){
     dots: true,
     slidesToShow: 1,
     speed: 1000,
-    // autoplay: true,
+    autoplay: true,
     autoplaySpeed:5000,
     waitForAnimate: false,
     wariableWidth: true,
@@ -37,7 +37,6 @@ $(document).ready(function(){
         settings: {
           arrows: true,
           slidesToShow: 3,
-          centerMode: true,
         }
       }
     ],

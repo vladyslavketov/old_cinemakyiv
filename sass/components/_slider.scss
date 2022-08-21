@@ -2,17 +2,20 @@
 .slick-list {
   // width: 100%;
   overflow: hidden;
+  
 }
 
 /* Лента слайдов */
 .slick-track {
   display: flex;
   gap: 4px;
+  padding: 4px 1px;
 
   overflow: hidden;
 
   @media screen and (min-width: 768px) {
     gap: 16px;
+    padding-left: 4px;
   }
 }
 

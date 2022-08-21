@@ -33,6 +33,22 @@
 
 (() => {
   const refs = {
+    openModalBtn: document.querySelector("[dataModalOpen--gform2]"),
+    closeModalBtn: document.querySelector("[dataModalClose--gform2]"),
+    modal: document.querySelector("[dataModal--gform2]"),
+  };
+
+  refs.openModalBtn.addEventListener("click", toggleModal);
+  refs.closeModalBtn.addEventListener("click", toggleModal);
+
+  function toggleModal() {
+    document.body.classList.toggle("modal-open")
+    refs.modal.classList.toggle("is-hidden");
+  }
+})();
+
+(() => {
+  const refs = {
     openModalBtn: document.querySelector("[dataModalOpen--localform]"),
     closeModalBtn: document.querySelector("[dataModalClose--localform]"),
     modal: document.querySelector("[dataModal--localform]"),

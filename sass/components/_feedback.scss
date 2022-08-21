@@ -5,9 +5,9 @@
 
 .feedback__container {
   @extend %flex;
-  gap: 16px;
+  gap: 32px;
 }
 
-.feedback__btn {
-  margin-left: auto;
-}
+// .feedback__btn {
+//   margin-left: auto;
+// }
