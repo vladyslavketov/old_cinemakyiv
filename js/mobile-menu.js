@@ -1,5 +1,5 @@
 (() => {
-  const menuBtnRef = document.querySelector("[data-menu-button]");
+  const menuBtnRef = document.querySelector("[data-menu-btn]");
   const mobileMenRef = document.querySelector("[data-menu]");
 
   menuBtnRef.addEventListener("click", () => {
@@ -10,6 +10,6 @@
     menuBtnRef.setAttribute("aria-expanded", !expanded);
 
     mobileMenRef.classList.toggle("is-open");
-    document.body.classList.toggle("menu-container-open");
+    document.body.classList.toggle("menu-container-is-open");
   });
 })();

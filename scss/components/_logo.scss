@@ -1,0 +1,16 @@
+.header__logo {
+  @extend %flex;
+  margin-right: auto;
+  height: var(--height__header);
+  gap: 4px;
+}
+
+.logo__icon,
+.logo__text {
+  fill: currentColor;
+}
+
+.logo__text {
+  font-weight: 700;
+  font-size: 24px;
+}

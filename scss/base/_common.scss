@@ -1,0 +1,64 @@
+// * {
+//   outline: 1px solid teal;
+// }
+
+body {
+  font-family: var(--font-f__main);
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  color: var(--color__main);
+};
+
+body.modal-open,
+body.menu-container-is-open {
+  overflow: hidden;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.section {
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+  
+  @media screen and (min-width: 1200px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
+
+.container {
+  padding: 0 16px;
+  margin: 0 auto;
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    padding: 0 32px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
+}
+
+.title {
+  font-size: 28px;
+  text-align: center;
+}
+
+.subtitle {
+  font-size: 20px;
+}
